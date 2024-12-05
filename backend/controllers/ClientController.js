@@ -1,4 +1,4 @@
-const ClientManager = require("../models/ClientManager");
+const ClientManager = require("../models/ClientManger");
 
 // Create a new client manager
 exports.addClientManager = async (req, res) => {
