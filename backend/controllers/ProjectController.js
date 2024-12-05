@@ -1,5 +1,5 @@
-const ProjectManager = require("../models/ProjectManager");
-const ClientManager = require("../models/ClientManager");
+const ProjectManager = require("../models/ProjectManger");
+const ClientManager = require("../models/ClientManger");
 
 // Create a new project
 exports.addProject = async (req, res) => {

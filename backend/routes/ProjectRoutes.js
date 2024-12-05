@@ -6,7 +6,7 @@ const {
   getProjectById,
   updateProject,
   deleteProject,
-} = require("../controllers/projectManagerController");
+} = require("../controllers/ProjectController");
 
 // Add a new project
 router.post("/", addProject);

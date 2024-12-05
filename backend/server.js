@@ -6,7 +6,8 @@ require('dotenv').config();
 
 const authRoutes = require('./routes/authRoutes');
 const protectedRoutes = require('./routes/protectedRoutes');
-const clientManagerRoutes = require("./routes/clientRoutes");
+const clientManagerRoutes = require('./routes/ClientRoutes');
+const projectManagerRoutes = require("./routes/ProjectRoutes");
 
 
 const app = express();
@@ -18,7 +19,8 @@ app.use(bodyParser.json());
 // Routes
 app.use('/auth', authRoutes);
 app.use('/protected', protectedRoutes);
-app.use("/api/client-managers", clientManagerRoutes);
+app.use("/api/", clientManagerRoutes);
+app.use("/api", projectManagerRoutes);
 
 // Connect to MongoDB and start server
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })

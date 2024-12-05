@@ -9,18 +9,18 @@ const {
 } = require("../controllers/ClientController");
 
 // Add a new Client Manager
-router.post("/", addClientManager);
+router.post("/add", addClientManager);
 
 // Get all Client Managers
-router.get("/", getAllClientManagers);
+router.get("/get", getAllClientManagers);
 
 // Get a Client Manager by ID
 router.get("/:id", getClientManagerById);
 
 // Update a Client Manager by ID
-router.put("/:id", updateClientManager);
+router.put("/update/:id", updateClientManager);
 
 // Delete a Client Manager by ID
-router.delete("/:id", deleteClientManager);
+router.delete("/delete/:id", deleteClientManager);
 
 module.exports = router;
