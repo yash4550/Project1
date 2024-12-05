@@ -78,4 +78,28 @@
   .client-list th {
     background-color: #f2f2f2;
   }
+  .contact-number-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .country-code-dropdown {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+    background: #f9f9f9;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .contact-number-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 14px;
+  }
+  
   
